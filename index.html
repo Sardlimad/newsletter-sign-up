@@ -12,6 +12,9 @@
 </head>
 <body>
   <div class="main-container" id="sign-up-card">
+    <div class="container" id="mobile-image-card">
+      <img class="image" id="mobile-image" src="./assets/images/illustration-sign-up-mobile.svg">
+    </div>
     <div class="container" id="content-card">
       <h1>Stay updated!</h1>
       <p>Join 60,000+ product managers receiving monthly updates on:</p>
@@ -30,16 +33,15 @@
         <button class="form-control btn" type="submit">Subscribe to monthly newsletter</button>
       </form>
     </div>
-    <div class="container" id="image-card">
+    <div class="container " id="desktop-image-card">
       <img class="image" id="desktop-image" src="./assets/images/illustration-sign-up-desktop.svg">
-      <img class="image" id="mobile-image" src="./assets/images/illustration-sign-up-mobile.svg">
     </div>
   </div>
 
   <div class="main-container" id="success-message-card">
     <img src="./assets/images/icon-success.svg" alt="icon-success" id="icon-success">
     <h1>Thanks for subscribing!</h1>
-    <p>A confirmation email has been sent to <strong>ash@loremcompany.com</strong>. Please open it and click the button inside to confirm your subscription.</p>
+    <p>A confirmation email has been sent to <strong id="email-message">ash@loremcompany.com</strong>. Please open it and click the button inside to confirm your subscription.</p>
     <button class="form-control btn" type="button" onclick="showSignUpCard()">Dismiss message</button>
   </div>
 

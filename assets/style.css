@@ -29,7 +29,7 @@ body {
 h1 {
     color: var(--CharcoalGrey);
     font-family: "Roboto Bold";
-    font-size: 3vw;
+    font-size: 50px;
     text-align: center;
 }
 
@@ -37,7 +37,6 @@ h1 {
     background-color: var(--White);
     display: flex;
     align-items: flex-start;
-    /* margin: 10rem 0rem; */
     border-radius: 30px;
     padding: 1.2rem;
 }
@@ -49,8 +48,12 @@ h1 {
     width: 320px;
 }
 
-#mobile-image {
+#mobile-image-card {
     display: none;
+}
+
+#desktop-image-card {
+    display: block;
 }
 
 /* Form style */
@@ -83,14 +86,14 @@ input {
 }
 
 input:focus {
-    border:  1.5px solid var(--DarkSlateGrey) ;
+    border: 1.5px solid var(--DarkSlateGrey);
     outline: none;
 }
 
 input:invalid {
     border-color: #FF527B;
     background-color: #fdd;
-    
+
 }
 
 input:focus:invalid {
@@ -116,13 +119,14 @@ input:focus:invalid {
     margin: 8px 10px;
     font-size: 10px;
     font-weight: 700;
-    color: var(--Tomato); /* Puedes cambiar el color según tus preferencias */
-    display: none; /* Inicialmente oculto */
-   }
-   
-   .invalid-feedback.active {
-    display: block; /* Se muestra cuando la clase 'active' está presente */
-   }
+    color: var(--Tomato);
+    display: none;
+}
+
+.invalid-feedback.active {
+    display: block;
+}
+
 /* Viñeta */
 ul {
     list-style-type: none;
@@ -149,23 +153,49 @@ li {
     width: 25vw;
 }
 
-#success-message-card h1{
+#success-message-card h1 {
     text-align: left;
     display: flex;
     font-size: 3.8vw;
     margin-bottom: 0px;
 }
 
-#success-message-card button{
+#success-message-card button {
     width: 100%;
     margin-top: 20px;
     margin-bottom: 0px;
 }
 
-/* @media (max-width: 375px) {
-    .main-container {
-        width: 100vw;
-        flex-direction: column;
+/* Responsive */
+@media (max-width: 576px) {
+    body {
+        display: block;
     }
 
-} */
+    .main-container {
+        margin: 0;
+        border-radius: 0;
+        padding: 0;
+    }
+
+    #content-card {
+        /* width: 100%; */
+    }
+
+    #sign-up-card {
+        display: block;
+    }
+
+    #desktop-image-card {
+        display: none;
+    }
+
+    #mobile-image-card {
+        display: block;
+    }
+
+    #mobile-image {
+        width: 100%;
+    }
+
+}
