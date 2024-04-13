@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./assets/screenshot2.png)
+![](./assets/screenshot-signup.png)
 
 ### Links
 
