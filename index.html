@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/style.css">
+  
+  <title>Newsletter sign-up</title>
+
+</head>
+<body>
+  <div class="main-container" id="sign-up-card">
+    <div class="container" id="content-card">
+      <h1>Stay updated!</h1>
+      <p>Join 60,000+ product managers receiving monthly updates on:</p>
+      <ul>
+        <li>Product discovery and building what matters</li>
+        <li>Measuring to ensure updates are a success</li>
+        <li>And much more!</li>
+      </ul>
+      <form action="#" method="post" novalidate>
+        <div class="form-component" id="mail-input">
+          <label class="" for="email-field">Email address</label>
+          <input type="email" class="form-control" name="email-field" id="email-field" placeholder="email@company.com" />
+          <span class="invalid-feedback" aria-live="polite"></span>
+        </div>
+
+        <button class="form-control btn" type="submit">Subscribe to monthly newsletter</button>
+      </form>
+    </div>
+    <div class="container" id="image-card">
+      <img class="image" id="desktop-image" src="./assets/images/illustration-sign-up-desktop.svg">
+      <img class="image" id="mobile-image" src="./assets/images/illustration-sign-up-mobile.svg">
+    </div>
+  </div>
+
+  <div class="main-container" id="success-message-card">
+    <img src="./assets/images/icon-success.svg" alt="icon-success" id="icon-success">
+    <h1>Thanks for subscribing!</h1>
+    <p>A confirmation email has been sent to <strong>ash@loremcompany.com</strong>. Please open it and click the button inside to confirm your subscription.</p>
+    <button class="form-control btn" type="button" onclick="showSignUpCard()">Dismiss message</button>
+  </div>
+
+  
+  <!-- Javascript -->
+  <script src="./assets/actions.js"></script>
+  
+</body>
+</html>
