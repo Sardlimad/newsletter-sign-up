@@ -148,7 +148,7 @@ li {
 
 /* Success Card */
 #success-message-card {
-    display: none;
+    display: block;
     padding: 3rem;
     width: 25vw;
 }
@@ -170,16 +170,14 @@ li {
 @media (max-width: 576px) {
     body {
         display: block;
+        height: 100vh;
+        width: 100vw;
     }
 
     .main-container {
         margin: 0;
         border-radius: 0;
         padding: 0;
-    }
-
-    #content-card {
-        /* width: 100%; */
     }
 
     #sign-up-card {
@@ -196,6 +194,28 @@ li {
 
     #mobile-image {
         width: 100%;
+    }
+
+    #success-message-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; /* Centra el contenido horizontalmente */
+        padding: 2rem;
+        width: 100vw;
+        height: 100vh;
+        box-sizing: border-box;
+        position: fixed; /* Asegura que el div cubra toda la pantalla */
+        top: 0;
+        left: 0;
+        z-index: 1000; /* Asegura que el div esté por encima de otros elementos */
+    }
+
+    #success-message-card h1 {
+        text-align: left;
+        display: flex;
+        font-size: 50px;
+        margin-bottom: 0px;
     }
 
 }

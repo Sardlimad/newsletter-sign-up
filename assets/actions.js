@@ -20,8 +20,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
     imageCard.style.height = `${contentCardHeight}px`;
   }
 
-
-
 });
 
 // Get references to the sign-up card and success message card elements
