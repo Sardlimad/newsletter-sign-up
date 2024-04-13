@@ -15,6 +15,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
 const signUpCard = document.getElementById('sign-up-card');
 const successCard = document.getElementById('success-message-card');
 
+// Get reference to email in success message card
+const emailMessage = document.getElementById('email-message');
+
 /*Custom Validation */
 const form = document.querySelector("form");
 const email = document.getElementById("email-field");
@@ -42,6 +45,7 @@ form.addEventListener("submit", (event) => {
     showError();
   } else {
     // If the email is valid, clear the email field, hide the sign-up card, and show the success message card
+    emailMessage.textContent = email.value;
     email.value = "";
     email.removeAttribute("required");
     signUpCard.style.display = "none";
