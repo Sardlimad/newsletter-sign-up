@@ -180,6 +180,11 @@ li {
         padding: 0;
     }
 
+    #content-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
     #sign-up-card {
         display: block;
     }
